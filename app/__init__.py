@@ -17,7 +17,7 @@ app.config["SECRET_KEY"] = "9ce58cc3-a46c-4ef2-9770-e0e3b2938b7e"
 app.config["UP_DIR"] = os.path.join(os.path.abspath(os.path.dirname(__file__)), "static/uploads/")
 app.config["FC_DIR"] = os.path.join(os.path.abspath(os.path.dirname(__file__)), "static/uploads/users/")
 
-app.debug = True
+app.debug = False
 
 db = SQLAlchemy(app)
 rd = FlaskRedis(app)
